@@ -1,0 +1,87 @@
+configuration {
+	// Define the modes Rofi will cycle through
+	modi: "drun,run,window";
+	
+	// Show application icons
+	show-icons: true;
+	
+	// Define how the application list is formatted
+	drun-display-format: "{name}";
+	
+	// Custom names for your modi
+	display-drun: "Apps";
+	display-run: "Run";
+	display-window: "Windows";
+
+	// Define your default font
+	font: "JetBrains Mono 10";
+  font-size: 10;
+  font-weight: bold;
+}
+
+// Load an external or built-in theme
+@theme "solarized"
+
+// Target the main outer window
+window {
+    width:            35%;
+    border:           2px;
+    border-color:     #444444;
+    border-radius:    12px;        /* Rounds the outer window corners */
+    background-color: #000;
+    padding: 20px;
+}
+
+// Target the container of search results
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: true;
+    padding:      10px 0px 0px;  /* Top, Right/Left, Bottom padding */
+}
+
+// Target individual rows/elements inside the list view
+element {
+    padding:       12px 12px;     /* Internal spacing for individual rows */
+    border-radius: 6px;          /* Rounds the corners of individual rows */
+    spacing:       12px;          /* Space between icon and text */
+    margin: 2px 0;
+}
+
+// Target the selected/highlighted row
+element selected {
+    background-color: #89b4fa;   /* Highlight background color */
+    text-color:       #11111b;   /* Highlight text color */
+}
+
+// Style the row when the mouse hovers over it
+element hover {
+    background-color: #313244;   /* Changes background on hover */
+    text-color:       #f5e0dc;   /* Changes text color on hover */
+    cursor:           pointer;   /* Changes cursor to a hand/pointer pointer */
+}
+
+// Base row styling
+element {
+    padding:          10px 15px;
+    border-radius:    8px;
+    background-color: transparent;
+    text-color:       #cdd6f4;
+    
+    // Enables the smooth animation for hover and selection states
+}
+
+// Hover state styling
+element hover {
+    background-color: #45475a;
+    text-color:       #a6e3a1;
+    cursor:           pointer;
+}
+
+// Font styling for the text inside rows
+element-text {
+    font:             "JetBrains Mono Regular 13";
+    background-color: transparent;
+    text-color:       #fff; /* Inherits #a6e3a1 on hover automatically */
+}
+

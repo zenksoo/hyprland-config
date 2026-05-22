@@ -1,0 +1,5 @@
+@define-color background rgba(24, 25, 29, 0.8);
+
+@define-color foreground #fff;
+
+@define-color hovered_bg rgba(169, 169, 169, 0.5);
