@@ -1,0 +1,49 @@
+{
+	"layer": "top",
+	"margin-top": 0,
+	"margin-left": 0,
+	"margin-right": 0,
+	"spacing": 3,
+
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+
+    "modules-left": [
+	"user",
+	"custom/sep",
+        "hyprland/workspaces",
+	"custom/sep",
+        "pulseaudio"
+    ],
+    "modules-center": [
+        "wlr/taskbar"
+    ],
+    "modules-right": [
+        "cpu",
+        "custom/sep",
+
+        "memory",
+        "custom/sep",
+
+        "disk",
+        "custom/sep",
+
+        "tray",
+        "custom/space",
+
+        "network",
+        "custom/sep",
+
+        "battery",
+        "custom/sep",
+
+        "wireplumber",
+        "custom/sep",
+
+        "clock",
+        "custom/sep",
+
+        "custom/exit"
+    ]
+}

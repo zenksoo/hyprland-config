@@ -1,0 +1,24 @@
+@theme "~/.config/rofi/theme.rasi"
+
+configuration {
+    modi: "window,drun,run,filebrowser,ssh";
+    show-icons: true;
+    icon-theme: "Papirus";
+
+    // stops rofi from changing size when filtering
+    dynamic: false;
+    
+    // Custom settings
+    matching: "fuzzy";
+    drun-display-format: "{name}";
+    
+    // Cleaner Prompt Labels
+    display-drun: "open:";
+    display-run: "run:";
+    display-window: "Windows:";
+    
+    // Mouse hover
+    hover-select: true;
+    me-select-entry: "MouseSecondary";
+    me-accept-entry: "MousePrimary";
+}

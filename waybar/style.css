@@ -1,0 +1,183 @@
+ * {
+	color: #dddddd;
+
+	font-family: "0xProto Nerd Font";
+	font-size: 14pt;
+
+	padding: 0px 0px;
+	margin: 0px 3px;
+
+	transition: all 0.1s;
+	border-radius: 0px;
+}
+
+window#waybar {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#workspaces * {
+	border-color: transparent;
+	box-shadow: none;
+	outline: none;
+	text-shadow: none;
+	background-color: #353535;
+	border-radius: 5px;
+}
+
+#workspaces button {
+	opacity: 0.7;
+	border: 2px darkgray solid;
+	margin-left: 2px;
+	margin-right: 2px;
+
+}
+
+#workspaces button label {
+	padding: 0 2px;
+	border: 0;
+	margin: 0;
+	background-color: #353535;
+}
+
+
+#workspaces button.empty {
+	opacity: 0.5;
+}
+
+#workspaces button.active {
+	padding: 0px 4px;
+	opacity: 1;
+	background-color: #353535;
+}
+
+#workspaces button:hover {
+	background: black;
+}
+
+#workspaces button:hover label {
+	background-color: black;
+	font-weight: bold;
+}
+
+#workspaces button.active:hover {
+	background-color: black;
+	opacity: 1;
+}
+
+
+tooltip label {
+	font-size: 11pt;
+}
+
+
+#window {
+    border: 0.5px @FG_COLOR;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+#custom-exit {
+    font-weight: bold;
+	opacity: 0.7;
+}
+
+#custom-exit:hover {
+	opacity: 1;
+	font-size: 120%;
+	padding: 0px 6px;
+}
+
+#disk,
+#memory,
+#cpu,
+#language {
+	opacity: 0.3;
+}
+
+#disk:hover,
+#memory:hover,
+#cpu:hover,
+#language:hover {
+	opacity: 1;
+}
+
+#clock {
+	font-size: 120%;
+}
+
+#clock:hover {
+}
+
+#backlight {
+}
+
+#battery,
+#battery.charging,
+#battery.plugged {
+}
+
+#network,
+#network.wifi,
+#network.ethernet {
+}
+
+#network.off {
+	opacity: 0.2;
+}
+
+#pulseaudio,
+#pulseaudio.muted {
+}
+
+#bluetooth,
+#bluetooth.on,
+#bluetooth.connected {
+}
+
+#bluetooth.disabled,
+#bluetooth.off {
+	opacity: 0.2;
+}
+
+#tray {
+}
+
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+}
+
+
+#custom-sep {
+	font-size: 120%;
+	opacity: 0.3;
+}
+
+#custom-space {
+}
+
+#custom-appmenu:hover {
+}
+
+#taskbar,
+#taskbar button {
+	background: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	-gtk-icon-shadow: none;
+}
+
+#taskbar button:hover {
+	box-shadow: none;
+	padding: 0px 6px;
+}
+
+#user {
+	font-size: 12px;
+	font-weight: 900;
+}
