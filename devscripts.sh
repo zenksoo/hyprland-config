@@ -16,7 +16,7 @@ install_configs () {
 		"yazi"
 		"wallpapers"
 		"lsd"
-
+		"scripts"
 	)
 	for d in "${list[@]}"; do
 		ln -sf "$PWD/$d" "$HOME/.config/$d"

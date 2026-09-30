@@ -12,6 +12,7 @@
 }
 
 window#waybar {
+	border: 0.5px darkgray solid;
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -21,13 +22,13 @@ window#waybar {
 	box-shadow: none;
 	outline: none;
 	text-shadow: none;
-	background-color: #353535;
-	border-radius: 5px;
+	background-color: transparent;
+	border-radius: 2px;
 }
 
 #workspaces button {
 	opacity: 0.7;
-	border: 2px darkgray solid;
+	border: 0.5px darkgray solid;
 	margin-left: 2px;
 	margin-right: 2px;
 
@@ -37,7 +38,7 @@ window#waybar {
 	padding: 0 2px;
 	border: 0;
 	margin: 0;
-	background-color: #353535;
+	background-color: transparent;
 }
 
 
@@ -46,9 +47,9 @@ window#waybar {
 }
 
 #workspaces button.active {
-	padding: 0px 4px;
+	padding: 0px 2px;
 	opacity: 1;
-	background-color: #353535;
+	background-color: transparent;
 }
 
 #workspaces button:hover {
