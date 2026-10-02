@@ -1,4 +1,5 @@
 -- general
+
 hl.config({
     general = {
         gaps_in = 0,
@@ -118,6 +119,15 @@ hl.bind(mainMod .. " + TAB", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + r", hl.dsp.exec_cmd("killall waybar; waybar"))
 
+-- Play/Pause media (Super + Shift + P)
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("playerctl --player=spotify play-pause"))
+
+-- Next track (Super + Shift + N)
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("playerctl --player=spotify next"))
+
+-- Previous track (Super + Shift + B)
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("playerctl --player=spotify previous"))
+
 -- audio volume, brightness, wifi
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"))
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%-"))
@@ -168,6 +178,8 @@ hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 0, hl.dsp.window.move({ workspac
 -- Move/resize windows
 hl.bind(mainMod .. " + " .. "mouse:272", hl.dsp.window.drag(), { mouse = true})
 hl.bind(mainMod .. " + " .. "mouse:273", hl.dsp.window.resize(), { mouse = true})
+
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
 -- Cursor
 hl.env("XCURSOR_SIZE", 10)

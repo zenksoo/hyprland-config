@@ -1,0 +1,19 @@
+[ContentDisplay]
+ViewMode=0
+
+[General]
+GlobalViewProps=true
+HomeUrl[$e]=$HOME
+ShowStatusbar=false
+Version=202
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+ToolBar=Enabled
+
+[UiSettings]
+ColorScheme=BreezeDark

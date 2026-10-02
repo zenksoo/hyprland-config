@@ -38,6 +38,9 @@
         "battery",
         "custom/sep",
 
+        "backlight",
+        "custom/sep",
+        
         "wireplumber",
         "custom/sep",
 

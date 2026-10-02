@@ -1,0 +1,22 @@
+[Colors:View]
+# Main text color for files, folders, and lists inside the window
+ForegroundNormal=239,240,241
+ForegroundInactive=150,150,150
+BackgroundNormal=43,48,52
+BackgroundAlternate=49,54,59
+
+[Colors:Window]
+# Text color for the general application frame and sidebars
+ForegroundNormal=239,240,241
+ForegroundInactive=150,150,150
+BackgroundNormal=43,48,52
+
+[Colors:Button]
+# Text color on buttons and clickable items
+ForegroundNormal=239,240,241
+BackgroundNormal=49,54,59
+
+[Colors:Selection]
+# Text and background colors when you select/highlight a file
+ForegroundNormal=255,255,255
+BackgroundNormal=61,174,233

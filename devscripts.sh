@@ -17,6 +17,9 @@ install_configs () {
 		"wallpapers"
 		"lsd"
 		"scripts"
+		"dolphinrc"
+		"kdeglobals"
+		"qt6rt"
 	)
 	for d in "${list[@]}"; do
 		ln -sf "$PWD/$d" "$HOME/.config/$d"
